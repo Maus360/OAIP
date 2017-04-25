@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/steki.dir/main.cpp.o  -o steki 
