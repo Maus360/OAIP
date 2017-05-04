@@ -31,6 +31,7 @@ void quickSort(int arr[], int left, int right) {
     if (i < right)
         quickSort(arr, i, right);
 }
+
 tree * add(int l , int r , int mas[]){
     tree *lol;
 
@@ -52,7 +53,7 @@ void show(tree *lol){
     show(lol->l);
     std::cout<<lol->value<<" ";
     show(lol->r);
-
+    std::cout<<std::endl;
 }
 
 int search(tree *lol, int value) {
@@ -70,6 +71,71 @@ int search(tree *lol, int value) {
         return 404;
     }
 
+}
+
+tree *dellist(tree *proot, int inf){
+    tree *ps = proot, *pr = proot, *w, *v;
+    while ((ps!=NULL)&&(ps->value!=inf)){
+        pr=ps;
+        if (inf<ps->value) ps = ps->l;
+        else ps = ps->r;
+    }
+    if (ps==NULL) return proot;
+
+    if ((ps->l==NULL) && (ps->r==NULL)){
+        if (pr==ps){
+            delete(ps);
+            return NULL;
+        }
+        if (ps->l == ps) pr->l=NULL;
+        else pr->r = NULL;
+        delete(ps);
+        return proot;
+    }
+    if (ps->l == NULL) {
+        if (ps == pr) {
+            ps = ps->r;
+            delete (pr);
+            return ps;
+        }
+        if (pr->l == ps) pr->l = ps->r;
+        else pr->r = ps->r;
+        delete (ps);
+        return proot;
+    }
+    if (ps->r==NULL){
+        if (ps==pr){
+            ps = ps->l;
+            delete(pr);
+            return ps;
+        }
+        if (pr->l ==ps) pr->l = ps->l;
+        else pr->r = ps->l;
+        delete(ps);
+        return proot;
+    }
+    w = ps->l;
+    if (w->r == NULL)
+        w->r = ps->r;
+    else{
+        while(w->r!=NULL){
+            v=w;
+            w=w->r;
+        }
+        v->r = w->l;
+        w->l = ps->l;
+        w->r = ps->r;
+    }
+    if (ps==pr){
+        delete(ps);
+        return w;
+    }
+    if (pr->l == ps)
+        pr->l=w;
+    else
+        pr->r = w;
+    delete(ps);
+    return proot;
 }
 
 int main(){
@@ -91,5 +157,7 @@ int main(){
     tree *lol = add(0, n-1, a);
 
     show(lol);
-    search(lol, 5);
+    //search(lol, 5);
+    std::cout<<dellist(lol, 3)<<std::endl;
+    show(lol);
 }

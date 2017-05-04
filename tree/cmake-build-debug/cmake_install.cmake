@@ -1,4 +1,4 @@
-# Install script for directory: /home/maus/CLionProjects/tree
+# Install script for directory: /home/maus/OAIP/tree
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maus/CLionProjects/tree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/maus/OAIP/tree/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
