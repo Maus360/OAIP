@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/uravnenie.dir/main.cpp.o  -o uravnenie 
