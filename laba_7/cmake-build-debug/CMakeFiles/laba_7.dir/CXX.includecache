@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/maus/CLionProjects/eques/main.cpp
-stdlib.h
--
+/home/maus/OAIP/laba_7/main.cpp
 iostream
+-
+math.h
 -
 

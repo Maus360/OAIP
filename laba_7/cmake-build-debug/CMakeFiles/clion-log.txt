@@ -1,0 +1,4 @@
+/home/maus/ide's/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/maus/OAIP/laba_7
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maus/OAIP/laba_7/cmake-build-debug

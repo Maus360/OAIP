@@ -48,10 +48,10 @@ RM = "/home/maus/ide's/clion-2017.1.1/bin/cmake/bin/cmake" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maus/OAIP/eques
+CMAKE_SOURCE_DIR = /home/maus/OAIP/laba_7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maus/OAIP/eques/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maus/OAIP/laba_7/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/eques/cmake-build-debug/CMakeFiles /home/maus/OAIP/eques/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/laba_7/cmake-build-debug/CMakeFiles /home/maus/OAIP/laba_7/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/eques/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/laba_7/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named eques
+# Target rules for targets named laba_7
 
 # Build rule for target.
-eques: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 eques
-.PHONY : eques
+laba_7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laba_7
+.PHONY : laba_7
 
 # fast build rule for target.
-eques/fast:
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/build
-.PHONY : eques/fast
+laba_7/fast:
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/build
+.PHONY : laba_7/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... eques"
+	@echo "... laba_7"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

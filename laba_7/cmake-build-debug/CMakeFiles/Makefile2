@@ -54,45 +54,45 @@ RM = "/home/maus/ide's/clion-2017.1.1/bin/cmake/bin/cmake" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maus/OAIP/eques
+CMAKE_SOURCE_DIR = /home/maus/OAIP/laba_7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maus/OAIP/eques/cmake-build-debug
+CMAKE_BINARY_DIR = /home/maus/OAIP/laba_7/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/eques.dir
+# Target rules for target CMakeFiles/laba_7.dir
 
 # All Build rule for target.
-CMakeFiles/eques.dir/all:
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/depend
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maus/OAIP/eques/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target eques"
-.PHONY : CMakeFiles/eques.dir/all
+CMakeFiles/laba_7.dir/all:
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/depend
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maus/OAIP/laba_7/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target laba_7"
+.PHONY : CMakeFiles/laba_7.dir/all
 
 # Include target in all.
-all: CMakeFiles/eques.dir/all
+all: CMakeFiles/laba_7.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/eques.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/eques/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/eques.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/eques/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/eques.dir/rule
+CMakeFiles/laba_7.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/laba_7/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/laba_7.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maus/OAIP/laba_7/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/laba_7.dir/rule
 
 # Convenience name for target.
-eques: CMakeFiles/eques.dir/rule
+laba_7: CMakeFiles/laba_7.dir/rule
 
-.PHONY : eques
-
-# clean rule for target.
-CMakeFiles/eques.dir/clean:
-	$(MAKE) -f CMakeFiles/eques.dir/build.make CMakeFiles/eques.dir/clean
-.PHONY : CMakeFiles/eques.dir/clean
+.PHONY : laba_7
 
 # clean rule for target.
-clean: CMakeFiles/eques.dir/clean
+CMakeFiles/laba_7.dir/clean:
+	$(MAKE) -f CMakeFiles/laba_7.dir/build.make CMakeFiles/laba_7.dir/clean
+.PHONY : CMakeFiles/laba_7.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/laba_7.dir/clean
 
 .PHONY : clean
 
