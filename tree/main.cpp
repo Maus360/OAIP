@@ -53,11 +53,10 @@ void show(tree *lol){
     show(lol->l);
     std::cout<<lol->value<<" ";
     show(lol->r);
-    std::cout<<std::endl;
 }
 
 int search(tree *lol, int value) {
-    if (lol->value > value) {
+    if (lol->value == value) {
         return value;
     }
     if (lol->value > value) {
@@ -138,6 +137,21 @@ tree *dellist(tree *proot, int inf){
     return proot;
 }
 
+int count = 0;
+void task(tree *lol){
+    //std::cout << count << std::endl;
+    if (lol->l==NULL and lol->r==NULL) return;
+
+    if (lol->l == NULL or lol->r == NULL) count++;
+
+    if (lol->l!=NULL){
+        task(lol->l);
+    }
+    if (lol->r!=NULL){
+        task(lol->r);
+    }
+}
+
 int main(){
     int n;
     int size;
@@ -150,14 +164,15 @@ int main(){
 
 
     }
-    for (int i = 0; i<n; i++) std::cout<<a[i]<<" ";
     std::cout<<std::endl;
     quickSort(a, 0, n-1);
-
     tree *lol = add(0, n-1, a);
+    show(lol);
+    std::cout<<std::endl;
+    //std::cout<<search(lol, 5)<<std::endl;
+    //dellist(lol, 3);
+    //show(lol);
 
-    show(lol);
-    //search(lol, 5);
-    std::cout<<dellist(lol, 3)<<std::endl;
-    show(lol);
+    task(lol);
+    std::cout << count << std::endl;
 }
