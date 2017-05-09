@@ -10,12 +10,14 @@ int min1 = 32000;
     stek *next, *head;
 };
 
+
 void add(int x, stek *&stack){
     stek *temp = new stek;
     temp->value = x;
     temp ->next = stack->head;
     stack->head = temp;
 }
+
 
 int k;
 void show(stek *stack){
@@ -32,15 +34,19 @@ void show(stek *stack){
         }
         temp = temp->next;
     }
+    cout<<endl;
     cout<<min1<<endl;
     cout<<max1<<endl;
 }
 
+
 void del(stek *stack) {
+    cout<<k<<endl;
     stek *temp = stack->head;
     stek *temp_next = temp->next;
-    if (k == 1) {
+    if (k == 0) {
         while (temp != NULL) {
+            //cout<<temp->value<<endl;
             if (temp->value == max1) {
                 temp_next = temp;
             }
@@ -50,7 +56,7 @@ void del(stek *stack) {
             temp = temp->next;
         }
     }
-    if (k == 0) {
+    if (k == 1) {
         while (temp != NULL) {
             if (temp->value == min1) {
                 temp_next = temp;
@@ -72,6 +78,7 @@ void Delete(stek *List)
     delete dop;
 
 }
+
 
 void Sort2(stek *List)
 {
@@ -99,6 +106,7 @@ void Sort2(stek *List)
     Delete(List);
 }
 
+
 int main() {
     stek *p = new stek;
 
@@ -110,11 +118,11 @@ int main() {
     add(500,p);
     add(70,p);
     add(700,p);
-    add(30,p);
+    add(300,p);
     add(45,p);
     add(90,p);
     add(300,p);
-    add(10,p);
+    //add(10,p);
 
 
 
@@ -122,6 +130,8 @@ int main() {
  //   Sort2(p);
     show(p);
     del(p);
+    show(p);
+    Sort2(p);
     show(p);
 
 }
